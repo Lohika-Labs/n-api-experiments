@@ -1,0 +1,20 @@
+{
+  "name": "n-api-experiments",
+  "version": "1.0.0",
+  "description": "n-api-experiments",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-gyp configure build && node --no-warnings index.js",
+    "opencv": "node --expose-wasm opencv.js"
+  },
+  "engines": {
+    "node": ">=8.4.0"
+  },
+  "author": "Denys Malykhin",
+  "license": "ISC",
+  "dependencies": {
+    "jpeg-js": "^0.3.4",
+    "node-addon-api": "^1.4.0",
+    "opencv.js": "^1.2.1"
+  }
+}
