@@ -2,6 +2,8 @@
 #include <opencv2/opencv.hpp>
 #include <stdio.h>
 
+unsigned int const CV_BGR2GRAY = 6;
+
 void swap(unsigned int *a, unsigned int *b)
 {
   unsigned int temp;

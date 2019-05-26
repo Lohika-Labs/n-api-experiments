@@ -2,10 +2,10 @@
   "name": "n-api-experiments",
   "version": "1.0.0",
   "description": "n-api-experiments",
-  "main": "index.js",
+  "main": "arrays.js",
   "scripts": {
-    "start": "node-gyp configure build && node --no-warnings index.js",
-    "opencv": "node --expose-wasm opencv.js"
+    "start:arrays": "node-gyp configure build && node --no-warnings arrays.js",
+    "start:images": "node-gyp configure build && node --no-warnings images.js"
   },
   "engines": {
     "node": ">=8.4.0"
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "jpeg-js": "^0.3.4",
-    "node-addon-api": "^1.4.0",
+    "node-addon-api": "^1.6.3",
     "opencv.js": "^1.2.1"
   }
 }
