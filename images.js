@@ -26,7 +26,7 @@ const outData = {
   height: bwImg.size().height,
 }
 
-const outJpegData = jpeg.encode(outData, 100)
+const outJpegData = jpeg.encode(outData, 95)
 
 fs.writeFileSync(path.join(__dirname, 'baboon-bw-opencv-js.jpg'), outJpegData.data )
 console.timeEnd('opencv.js to B&W')
