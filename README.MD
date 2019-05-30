@@ -19,8 +19,9 @@ brew link --force opencv@2
 npm i
 ```
 
-3. Buld & run
+3. Buld and run
 
 ```bash
-npm start
+npm run start:arrays
+npm run start:images
 ```
