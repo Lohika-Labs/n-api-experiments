@@ -17,13 +17,15 @@ const rawDataBW = jpeg.decode(inJpgDataBW)
 const img = cv.matFromImageData(rawDataBW)
 const bwImg = new cv.Mat()
 
-cv.cvtColor(img, bwImg, cv.COLOR_BGR2GRAY)
+cv.cvtColor(img, bwImg, cv.COLOR_RGBA2GRAY)
+cv.cvtColor(bwImg, bwImg, cv.COLOR_GRAY2RGBA)
 
 const outData = {
   data: bwImg.data,
   width: bwImg.size().width,
   height: bwImg.size().height,
 }
+
 const outJpegData = jpeg.encode(outData, 100)
 
 fs.writeFileSync(path.join(__dirname, 'baboon-bw-opencv-js.jpg'), outJpegData.data )
