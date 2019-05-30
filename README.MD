@@ -2,7 +2,7 @@
 
 Important: this code will work only on OSX, you should update `binding.gyp` `conditions` for your OS.
 
-### Instalation
+### Installation
 
 1) Opencv
 
@@ -12,4 +12,4 @@ brew link --force opencv@2
 ```
 
 2) Dependencies: `npm i`
-3) Buld & run: `npm start`
+3) Build & run: `npm run start:arrays` or `npm run start:images`
